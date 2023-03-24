@@ -20,8 +20,8 @@ let myPlaceholder = null
 
 palindromeBtn.addEventListener("click", function (e) {
     // Display a Modal
-    // addflag, true - Model Display
-    // addflag, false - Model Hide
+    // addflag, true - Modal Display
+    // addflag, false - Modal Hide
     if(flag2 == false){
         flag1 = !flag1;
     }
@@ -43,10 +43,9 @@ palindromeBtn.addEventListener("click", function (e) {
 
 document.addEventListener("keydown", function (e) {
     if (e.key == "Escape") {
-        // createTicket(modelPriorityColor, textAreaCont.value); // This function will create a ticket.
         modalCont1.style.display = "none";
         input1.value = '';
-        flag1 = false; // single click on add button ke liye after pressing shift
+        flag1 = false; 
         let checkAlert = document.querySelector('.alert-dismissible')  
         if(checkAlert){
             checkAlert.remove()
@@ -80,10 +79,9 @@ correctIndexBtn.addEventListener("click", function (e) {
 
 document.addEventListener("keydown", function (e) {
     if (e.key == "Escape") {
-        // createTicket(modelPriorityColor, textAreaCont.value); // This function will create a ticket.
         modalCont2.style.display = "none";
         input2.value = null;
-        flag2 = false; // single click on add button ke liye after pressing shift
+        flag2 = false; 
     }
 });
 
